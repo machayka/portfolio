@@ -1,16 +1,15 @@
+import { Blogs } from "@/components/Blogs";
 import { Container } from "@/components/Container";
 import { Heading } from "@/components/Heading";
 import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
-import { Products } from "@/components/Products";
-import { getAllBlogs } from "../../../lib/getAllBlogs";
-import { Blogs } from "@/components/Blogs";
 import { Metadata } from "next";
+import { getAllBlogs } from "../../../lib/getAllBlogs";
 
 export const metadata: Metadata = {
-  title: "Blogs | John Doe",
+  title: "Blogs | Kacper Machaj",
   description:
-    "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "Kacper Machaj to programista full-stack, który uwielbia tworzyć aplikacje internetowe, które mogą coś wnieść do życia innych ludzi.",
 };
 
 export default async function Blog() {

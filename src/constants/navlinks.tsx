@@ -1,5 +1,4 @@
 import {
-  IconArticle,
   IconBolt,
   IconBriefcase2,
   IconMail,
@@ -14,22 +13,22 @@ export const navlinks = [
   },
   {
     href: "/about",
-    label: "About",
+    label: "O mnie",
     icon: IconMessage2,
   },
   {
     href: "/projects",
-    label: "Projects",
+    label: "Projekty",
     icon: IconBriefcase2,
   },
-  {
-    href: "/blog",
-    label: "Articles",
-    icon: IconArticle,
-  },
+  // {
+  //   href: "/blog",
+  //   label: "Artykuły",
+  //   icon: IconArticle,
+  // },
   {
     href: "/contact",
-    label: "Contact",
+    label: "Kontakt",
     icon: IconMail,
   },
 ];
