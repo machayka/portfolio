@@ -32,7 +32,7 @@ export const Sidebar = () => {
               <Navigation setOpen={setOpen} />
             </div>
             <div onClick={() => isMobile() && setOpen(false)}>
-              <Badge href="/resume" text="Read Resume" />
+              <Badge href="/resume" text="Zobacz CV" />
             </div>
           </motion.div>
         )}
@@ -79,7 +79,7 @@ export const Navigation = ({
       ))}
 
       <Heading as="p" className="text-sm md:text-sm lg:text-sm pt-10 px-2">
-        Socials
+        Linki
       </Heading>
       {socials.map((link: Navlink) => (
         <Link

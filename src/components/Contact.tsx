@@ -41,14 +41,13 @@ export const Contact = () => {
     });
 
     if (response.ok) {
-      alert("Wiadomość wysłana!");
       setFormData(defaultFormState);
       toast("Wiadomość została wysłana", {
         description:
           "Dziękuję za kontakt! Odpowiem najszybciej, jak to możliwe.",
       });
     } else {
-      alert("Coś poszło nie tak...");
+      setDisabled(false);
       toast("Wiadomość nie została wysłana", {
         description: "Coś poszło nie tak... Spróbuj ponownie.",
         action: {
