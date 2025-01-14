@@ -28,25 +28,26 @@ export const Contact = () => {
 
     e.preventDefault();
 
-    const response = await fetch("https://submit-form.com/03JMeOYXX", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: formData.name.value,
-        email: formData.email.value,
-        message: formData.message.value,
-      }),
-    });
+    try {
+      await fetch("https://submit-form.com/03JMeOYXX", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name.value,
+          email: formData.email.value,
+          message: formData.message.value,
+        }),
+      });
 
-    if (response.ok) {
       setFormData(defaultFormState);
       toast("Wiadomość została wysłana", {
         description:
           "Dziękuję za kontakt! Odpowiem najszybciej, jak to możliwe.",
       });
-    } else {
+    } catch (error) {
       setDisabled(false);
       toast("Wiadomość nie została wysłana", {
         description: "Coś poszło nie tak... Spróbuj ponownie.",
@@ -56,6 +57,7 @@ export const Contact = () => {
         },
       });
     }
+
     setLoading(false);
   };
 
