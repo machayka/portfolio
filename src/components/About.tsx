@@ -100,7 +100,7 @@ export default function About() {
           precyzji i zaangażowania, trochę jak kodowanie.
         </Paragraph>
         <Paragraph className=" mt-4">
-          W przyszłości widzę siebie w branży kryptowalut – to idealne
+          W przyszłości widzę siebie w branży kryptowalut – to perfekcyjne
           <Highlight>połączenie technologii i ekonomii</Highlight>, które
           idealnie do mnie pasuje. Jestem osobą, która zawsze{" "}
           <Highlight>
