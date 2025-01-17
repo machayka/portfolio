@@ -1,4 +1,5 @@
 "use client";
+import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
 import Image from "next/image";
 
@@ -71,48 +72,44 @@ export default function About() {
 
       <div className="max-w-4xl">
         <Paragraph className=" mt-4">
-          Hey there, I&apos;m Kacper Machaj - a passionate developer, avid
-          writer, and a connoisseur of awesome design. Welcome to my corner of
-          the digital world!
+          Jestem studentem <Highlight>Ekonomii</Highlight>, który z pasją
+          zgłębia świat technologii i kryptowalut. Programowanie to dla mnie coś
+          więcej niż praca – to hobby, które mnie wciągnęło już w technikum, a
+          podczas pandemii wszedłem w nie na całego. Chciałem produktywnie
+          wykorzystać czas wolny i tak zaczęła się moja przygoda.
         </Paragraph>
         <Paragraph className=" mt-4">
-          Since the early days of my journey, I&apos;ve been captivated by the
-          art of crafting exceptional digital experiences. As a developer, I
-          thrive on turning lines of code into functional and elegant solutions.
-          My goal is to not just create software, but to build digital marvels
-          that seamlessly merge form and function.
+          Zacząłem od <Highlight>Pythona</Highlight>, bo marzyłem o tworzeniu
+          AI, ale szybko przekonałem się, że to nie takie proste. Potem
+          spróbowałem zrobić bota do tradingu – znów wyzwanie było ponad moje
+          umiejętności. Mimo to każde z tych doświadczeń pchało mnie dalej, aż
+          podczas wakacji dostałem swoją <Highlight>pierwszą pracę</Highlight>{" "}
+          jako programista. Od tamtej pory uczę się na okrągło i czerpię ogromną
+          radość z tego, że ciągle mogę być lepszy.
         </Paragraph>
 
         <Paragraph className=" mt-4">
-          But my journey doesn&apos;t stop at coding. With a heart full of words
-          and a mind brimming with ideas, I&apos;ve ventured into the realm of
-          writing. From tech articles that unravel complex concepts to creative
-          tales that ignite the imagination, I weave words to inform, entertain,
-          and inspire.
+          Najbardziej kręci mnie chyba rozwój – patrzę na swój kod sprzed pół
+          roku i mam ochotę napisać go od nowa, bo teraz wiem, jak zrobić to
+          lepiej. Programowanie nie jest dla mnie obowiązkiem, a frajdą. Gdyby
+          nie rachunki, mógłbym robić to za darmo.
         </Paragraph>
         <Paragraph className=" mt-4">
-          What sets me apart is my unwavering appreciation for design. I believe
-          that aesthetics and usability go hand in hand. My eye for awesome
-          design ensures that every project I undertake not only works
-          flawlessly under the hood but also looks stunning on the surface.
+          Poza programowaniem uwielbiam swoje akwarium – 200 litrów automatyki i
+          pięknego, naturalnego rozkwitu. To taki mój projekt, który wymaga
+          precyzji i zaangażowania, trochę jak kodowanie.
         </Paragraph>
         <Paragraph className=" mt-4">
-          Through this website, I aim to share my insights, experiences, and
-          creations with you. Whether you&apos;re a fellow developer seeking
-          solutions, a fellow writer in search of inspiration, or simply someone
-          who appreciates the finer aspects of design, there&apos;s something
-          here for you.
+          W przyszłości widzę siebie w branży kryptowalut – to idealne
+          <Highlight>połączenie technologii i ekonomii</Highlight>, które
+          idealnie do mnie pasuje. Jestem osobą, która zawsze{" "}
+          <Highlight>
+            daje z siebie wszystko, i w każdy projekt wkładam pełne
+            zaangażowanie.
+          </Highlight>{" "}
+          Jeśli coś robię, to robię to dobrze.
         </Paragraph>
-        <Paragraph className=" mt-4">
-          Join me on this journey of bytes and narratives, logic and creativity,
-          code and prose. Together, we can explore the boundless possibilities
-          of technology and storytelling, all while reveling in the sheer beauty
-          of thoughtful design.
-        </Paragraph>
-        <Paragraph className=" mt-4">
-          Thank you for being here, and I can&apos;t wait to embark on this
-          adventure with you.
-        </Paragraph>
+        <Paragraph className=" mt-4">Dzięki, że tu jesteś.</Paragraph>
       </div>
     </div>
   );

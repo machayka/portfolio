@@ -1,11 +1,11 @@
 "use client";
-import { timeline } from "@/constants/work-timeline";
+import { timeline } from "@/constants/education-timeline";
 import { IconCircleCheckFilled } from "@tabler/icons-react";
 import React from "react";
 import { Heading } from "./Heading";
 import { Paragraph } from "./Paragraph";
 
-export const WorkHistory = () => {
+export const EducationHistory = () => {
   return (
     <div>
       {timeline.map((item, index) => (

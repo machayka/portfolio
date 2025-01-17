@@ -11,20 +11,19 @@ export default function Home() {
       <span className="text-4xl">👋</span>
       <Heading className="font-black">Hej! Jestem Kacper</Heading>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m a full-stack developer that loves{" "}
-        <Highlight>building products</Highlight> and web apps that can impact
-        millions of lives
+        Jestem programistą full-stack i uwielbiam{" "}
+        <Highlight>tworzyć aplikacje</Highlight>, wdrażać je i rozwijać.
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m a senior software engineer with{" "}
-        <Highlight>7 years of experience</Highlight> building scalable web apps
-        that are performance optimized and good looking.
+        Programuje zawodowo od{" "}
+        <Highlight>{new Date().getFullYear() - 2021} lat</Highlight> i nie
+        zamierzam przestawać.
       </Paragraph>
       <Heading
         as="h2"
         className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
       >
-        What I&apos;ve been working on
+        Nad czym pracowałem
       </Heading>
       <Products />
       <TechStack />

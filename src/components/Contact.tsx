@@ -113,9 +113,15 @@ export const Contact = () => {
         />
       </div>
       <button
-        className="w-full px-2 py-2 mt-4 bg-neutral-100 rounded-md font-bold text-neutral-500"
+        className="w-full px-2 py-2 mt-4 bg-neutral-100 rounded-md font-bold text-neutral-500 cursor-pointer hover:bg-zinc-200 transition duration-200"
         type="submit"
-        disabled={disabled}
+        disabled={
+          disabled ||
+          loading ||
+          !formData.name.value ||
+          !formData.email.value ||
+          !formData.message.value
+        }
       >
         {loading ? <IconLoader className="animate-spin mx-auto" /> : "Wyślij"}
       </button>

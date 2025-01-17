@@ -1,10 +1,14 @@
 import Image from "next/image";
-import React from "react";
-import { Heading } from "./Heading";
 import { twMerge } from "tailwind-merge";
+import { Heading } from "./Heading";
 
 export const TechStack = () => {
   const stack = [
+    {
+      title: "Firebase",
+      src: "/images/logos/firebase.png",
+      className: "h-10 w-24",
+    },
     {
       title: "Next.js",
       src: "/images/logos/next.png",
@@ -24,12 +28,6 @@ export const TechStack = () => {
       className: "h-10 w-8",
     },
     {
-      title: "Framer Motion",
-      src: "/images/logos/framer.webp",
-
-      className: "h-10 w-10",
-    },
-    {
       title: "Node",
       src: "/images/logos/node.png",
 
@@ -46,6 +44,18 @@ export const TechStack = () => {
       src: "/images/logos/vercel.png",
 
       className: "h-10 w-24",
+    },
+    {
+      title: "Google Analytics",
+      src: "/images/logos/google-analytics.svg.png",
+
+      className: "h-10 w-20",
+    },
+    {
+      title: "Python",
+      src: "/images/logos/python.svg.png",
+
+      className: "h-10 w-10",
     },
   ];
   return (

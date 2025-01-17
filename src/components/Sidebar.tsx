@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { Badge } from "./Badge";
 import { Heading } from "./Heading";
+import { LinkPreview } from "./ui/link-preview";
 
 export const Sidebar = () => {
   const [open, setOpen] = useState(isMobile() ? false : true);
@@ -82,9 +83,9 @@ export const Navigation = ({
         Linki
       </Heading>
       {socials.map((link: Navlink) => (
-        <Link
+        <LinkPreview
+          url={link.href}
           key={link.href}
-          href={link.href}
           className={twMerge(
             "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
           )}
@@ -96,7 +97,7 @@ export const Navigation = ({
             )}
           />
           <span>{link.label}</span>
-        </Link>
+        </LinkPreview>
       ))}
     </div>
   );

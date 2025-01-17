@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
+import rehypePrism from "@mapbox/rehype-prism";
 import nextMDX from "@next/mdx";
 import remarkGfm from "remark-gfm";
-import rehypePrism from "@mapbox/rehype-prism";
 
 const nextConfig = {
   images: {
-    domains: ["images.unsplash.com", "res.cloudinary.com"],
+    domains: ["images.unsplash.com", "res.cloudinary.com", "api.microlink.io"],
   },
   experimental: {
     mdxRs: true,
