@@ -32,7 +32,10 @@ export const Sidebar = () => {
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <div onClick={() => isMobile() && setOpen(false)}>
+            <div
+              onClick={() => isMobile() && setOpen(false)}
+              className="fixed bottom-4 left-4 lg: flex"
+            >
               <Badge href="/resume" text="Zobacz CV" />
             </div>
           </motion.div>
