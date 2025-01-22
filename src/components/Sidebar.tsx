@@ -1,9 +1,14 @@
 "use client";
 import { navlinks } from "@/constants/navlinks";
+import { references } from "@/constants/references";
 import { socials } from "@/constants/socials";
 import { isMobile } from "@/lib/utils";
 import { Navlink } from "@/types/navlink";
-import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
+import {
+  IconExternalLink,
+  IconLayoutSidebarRightCollapse,
+  IconSchool,
+} from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,6 +18,7 @@ import { twMerge } from "tailwind-merge";
 import { Badge } from "./Badge";
 import { Heading } from "./Heading";
 import { LinkPreview } from "./ui/link-preview";
+import { Separator } from "./ui/separator";
 
 export const Sidebar = () => {
   const [open, setOpen] = useState(isMobile() ? false : true);
@@ -100,8 +106,47 @@ export const Navigation = ({
             )}
           />
           <span>{link.label}</span>
+          <IconExternalLink className="h4 w-4 flex-shrink-0 opacity-80" />
         </LinkPreview>
       ))}
+
+      <Heading as="p" className="text-sm md:text-sm lg:text-sm pt-10 px-2">
+        Referencje
+      </Heading>
+      {references.map((link: Navlink) => (
+        <Link
+          href={link.href}
+          target="_blank"
+          key={link.href}
+          className={twMerge(
+            "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
+          )}
+        >
+          <link.icon
+            className={twMerge(
+              "h-4 w-4 flex-shrink-0",
+              isActive(link.href) && "text-sky-500"
+            )}
+          />
+          <span>{link.label}</span>
+          <IconExternalLink className="h4 w-4 flex-shrink-0 opacity-80" />
+        </Link>
+      ))}
+      <Separator />
+      <Link
+        href={"/files/stypendium.pdf"}
+        target="_blank"
+        className="text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
+      >
+        <IconSchool
+          className={twMerge(
+            "h-4 w-4 flex-shrink-0",
+            isActive("/files/stypendium.pdf") && "text-sky-500"
+          )}
+        />
+        <span>Stypendium</span>
+        <IconExternalLink className="h4 w-4 flex-shrink-0 opacity-80" />
+      </Link>
     </div>
   );
 };
