@@ -88,7 +88,10 @@ export const Navigation = ({
         </Link>
       ))}
 
-      <Heading as="p" className="text-sm md:text-sm lg:text-sm pt-10 px-2">
+      <Heading
+        as="p"
+        className="text-sm md:text-sm lg:text-sm pt-4 md:pt-10 px-2"
+      >
         Linki
       </Heading>
       {socials.map((link: Navlink) => (
@@ -110,7 +113,10 @@ export const Navigation = ({
         </LinkPreview>
       ))}
 
-      <Heading as="p" className="text-sm md:text-sm lg:text-sm pt-10 px-2">
+      <Heading
+        as="p"
+        className="text-sm md:text-sm lg:text-sm pt-4 md:pt-10 px-2"
+      >
         Referencje
       </Heading>
       {references.map((link: Navlink) => (
