@@ -1,5 +1,6 @@
 import { Footer } from "@/components/Footer";
 import { Sidebar } from "@/components/Sidebar";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
@@ -36,6 +37,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
