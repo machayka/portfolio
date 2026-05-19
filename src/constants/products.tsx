@@ -10,7 +10,40 @@ import Simulator from "public/images/simulator.png";
 
 export const products = [
   {
-    href: "https://agreem.bid",
+    title: "Kelnerhood",
+    description:
+      "Zwiększ sprzedaż w swojej restauracji z Kelnerhood, systemem do zarządzania zamówieniami.",
+    thumbnail: Kelnerhood4,
+    images: [Kelnerhood2, Kelnerhood3, Kelnerhood4],
+    stack: ["Firebase", "React", "Tailwindcss", "i18next"],
+    slug: "kelnerhood",
+    content: (
+      <div>
+        <p>
+          Kelnerhood to platforma, którą stworzyliśmy, aby ułatwić życie zarówno
+          restauratorom, jak i ich klientom. Dzięki kodom QR klienci mogą
+          zamawiać jedzenie bezpośrednio ze swoich smartfonów, co przyspiesza
+          obsługę i poprawia komfort korzystania z restauracji. System pozwala
+          na szybkie realizowanie zamówień, zwiększa satysfakcję klientów i
+          wprowadza nowoczesne rozwiązania do codziennej obsługi.{" "}
+        </p>
+        <p>
+          Pracując nad tym projektem, nauczyłem się wielu rzeczy. Przede
+          wszystkim zarządzania zespołem – koordynowałem prace innych
+          programistów i dbałem, aby wszystko działało zgodnie z planem.
+          Współpracowaliśmy intensywnie na GitHubie i Jirze, co pozwoliło mi
+          lepiej opanować pracę zespołową i kontrolę wersji.{" "}
+        </p>
+        <p>
+          Stworzyliśmy funkcje takie jak personalizacja menu, obsługa wielu
+          języków czy personalizowane motywy restauracji. To wszystko sprawiło,
+          że praca nad Kelnerhood była dla mnie świetną okazją do rozwoju
+          zarówno technicznego, jak i organizacyjnego.{" "}
+        </p>
+      </div>
+    ),
+  },
+  {
     title: "Agreem Bid",
     description:
       "Automatyzacja procesu podpisywania umów i ofert przez tworzenie smartkontraktów escrow.",
@@ -52,41 +85,6 @@ export const products = [
     ),
   },
   {
-    href: "https://kelnerhood.com",
-    title: "Kelnerhood",
-    description:
-      "Zwiększ sprzedaż w swojej restauracji z Kelnerhood, systemem do zarządzania zamówieniami.",
-    thumbnail: Kelnerhood4,
-    images: [Kelnerhood2, Kelnerhood3, Kelnerhood4],
-    stack: ["Firebase", "React", "Tailwindcss", "i18next"],
-    slug: "kelnerhood",
-    content: (
-      <div>
-        <p>
-          Kelnerhood to platforma, którą stworzyliśmy, aby ułatwić życie zarówno
-          restauratorom, jak i ich klientom. Dzięki kodom QR klienci mogą
-          zamawiać jedzenie bezpośrednio ze swoich smartfonów, co przyspiesza
-          obsługę i poprawia komfort korzystania z restauracji. System pozwala
-          na szybkie realizowanie zamówień, zwiększa satysfakcję klientów i
-          wprowadza nowoczesne rozwiązania do codziennej obsługi.{" "}
-        </p>
-        <p>
-          Pracując nad tym projektem, nauczyłem się wielu rzeczy. Przede
-          wszystkim zarządzania zespołem – koordynowałem prace innych
-          programistów i dbałem, aby wszystko działało zgodnie z planem.
-          Współpracowaliśmy intensywnie na GitHubie i Jirze, co pozwoliło mi
-          lepiej opanować pracę zespołową i kontrolę wersji.{" "}
-        </p>
-        <p>
-          Stworzyliśmy funkcje takie jak personalizacja menu, obsługa wielu
-          języków czy personalizowane motywy restauracji. To wszystko sprawiło,
-          że praca nad Kelnerhood była dla mnie świetną okazją do rozwoju
-          zarówno technicznego, jak i organizacyjnego.{" "}
-        </p>
-      </div>
-    ),
-  },
-  {
     href: "https://github.com/GrandeWaver/edu-rewolucja/blob/main/Projekt%20“edu-rewolucja”%20(1).pdf",
     title: "Edu-rewolucja",
     description:
@@ -124,7 +122,7 @@ export const products = [
   },
   {
     href: "https://grandewaver-saving-calculator-sp500-xbmrbw.streamlit.app",
-    title: "Symulator prostego algorytmu inwestycyjnego",
+    title: "Symulator inwestycyjny S&P 500",
     description:
       "Aplikacja webowa, która pozwala na symulację inwestycji w S&P 500.",
     thumbnail: Simulator,

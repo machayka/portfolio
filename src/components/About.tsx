@@ -107,9 +107,8 @@ export default function About() {
             daje z siebie wszystko, i w każdy projekt wkładam pełne
             zaangażowanie.
           </Highlight>{" "}
-          Jeśli coś robię, to robię to dobrze.
         </Paragraph>
-        <Paragraph className=" mt-4">Dzięki, że tu jesteś.</Paragraph>
+
       </div>
     </div>
   );

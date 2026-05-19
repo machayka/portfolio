@@ -11,11 +11,12 @@ export default function Home() {
       <span className="text-4xl">💼</span>
       <Heading className="font-black">Historia pracy</Heading>
       <Paragraph className="max-w-xl mt-4">
-        Najbardziej lubię pracować nad <Highlight>produktem,</Highlight> tworzyć
-        rozwiązania i je wdrażać.
+        Nad najmuje.com pracuję od czerwca 2023 - najpierw jako programista w
+        TylkoAdvisors, teraz jako CTO w Banner Digital. Ten sam projekt, nowa
+        rola.
       </Paragraph>
       <WorkHistory />
-      <span className="text-4xl">📚</span>
+      <span className="text-4xl mt-20 block">📚</span>
       <Heading className="font-black">Edukacja</Heading>
       <Paragraph className="max-w-xl mt-4">
         Choć praca może być bardziej opłacalna niż studiowanie, uniwersytet
